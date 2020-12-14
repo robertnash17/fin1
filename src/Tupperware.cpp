@@ -2,8 +2,10 @@
 #include "Dessert.h"
 #include "ChocChipCookie.h"
 #include "PecanBar.h"
+#include <vector>
+#include <ostream>
 
-
+using namespace std;
 
 Tupperware::Tupperware(int max_desserts):max_desserts(max_desserts){
 
@@ -48,9 +50,9 @@ bool Tupperware::AddDessert(Dessert* pDessert){
  * \return Nothing
  */
 void Tupperware::ListDesserts(){
-	for(size_t i = 0; i < myDesserts.size(); ++i) myDesserts[i] = 0;{
-		cout << Dessert.taste(i) << endl;
-	}
+	for (std::vector<Dessert*>:: iterator myiter = myDesserts.begin(); myiter != myDesserts.end(); ++myiter){
+			(*myiter)->Dessert::taste();
+		}
 }
 
 /**
