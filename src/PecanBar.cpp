@@ -1,5 +1,6 @@
 #include "PecanBar.h"
 #include "Tupperware.h"
+#include <string>
 
 /**
 	 constructs object
@@ -11,7 +12,6 @@ PecanBar::PecanBar(int numb):Dessert(numb){
 }
 
 PecanBar::~PecanBar(){
-
 }
 
 /**
